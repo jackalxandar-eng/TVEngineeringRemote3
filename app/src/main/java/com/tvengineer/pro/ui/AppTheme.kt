@@ -16,13 +16,24 @@ val Red = Color(0xFFFF4E67)
 val Amber = Color(0xFFFFA200)
 val Green = Color(0xFF46D58A)
 
-private val colors= darkColorScheme(
-    primary=Cyan, secondary=Cyan2, background=Bg, surface=Panel,
-    onPrimary=Color.Black,onSecondary=Color.Black,onBackground=Text,onSurface=Text,
-    error=Red
+private val colors = darkColorScheme(
+    primary = Cyan,
+    secondary = Cyan2,
+    background = Bg,
+    surface = Panel,
+    onPrimary = Color.Black,
+    onSecondary = Color.Black,
+    onBackground = Text,
+    onSurface = Text,
+    error = Red
 )
 
 @Composable
-fun TVEngineerTheme(content:@Composable()->Unit){
-    MaterialTheme(colorScheme=colors,content=content)
+fun TVEngineerTheme(
+    content: @Composable () -> Unit
+) {
+    MaterialTheme(
+        colorScheme = colors,
+        content = content
+    )
 }
